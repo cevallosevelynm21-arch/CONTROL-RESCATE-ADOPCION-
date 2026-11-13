@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listado de casos de rescate animal registrados.">
+    <title>Consultar rescates | Control de Rescate y Adopción</title>
+</head>
+<body>
+    <header>
+        <h1>Listado de rescates</h1>
+        <p>Consulta ejemplos de casos registrados y su estado de seguimiento.</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar un caso</a></li>
+                <li><a href="rescates.html" aria-current="page">Consultar rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="tabla-rescates">
+            <h2 id="tabla-rescates">Reportes registrados (datos demostrativos)</h2>
+            <p>La siguiente tabla contiene información ficticia para demostrar la estructura del listado. No representa reportes reales.</p>
+
+            <table>
+                <caption>Resumen de casos de rescate animal</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Animal</th>
+                        <th scope="col">Ubicación</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Prioridad</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RES-001</td>
+                        <td>Perro</td>
+                        <td>Guayaquil</td>
+                        <td>2026-10-20</td>
+                        <td>Alta</td>
+                        <td>Rescatado</td>
+                    </tr>
+                    <tr>
+                        <td>RES-002</td>
+                        <td>Gato</td>
+                        <td>Durán</td>
+                        <td>2026-10-22</td>
+                        <td>Media</td>
+                        <td>En tratamiento</td>
+                    </tr>
+                    <tr>
+                        <td>RES-003</td>
+                        <td>Fauna silvestre</td>
+                        <td>Samborondón</td>
+                        <td>2026-10-25</td>
+                        <td>Alta</td>
+                        <td>En seguimiento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="estados">
+            <h2 id="estados">Descripción de los estados</h2>
+            <dl>
+                <dt>Rescatado</dt>
+                <dd>El animal recibió atención y fue retirado de la situación de riesgo.</dd>
+                <dt>En tratamiento</dt>
+                <dd>El animal se encuentra bajo atención veterinaria.</dd>
+                <dt>En seguimiento</dt>
+                <dd>El caso continúa en observación para verificar su evolución.</dd>
+                <dt>En adopción</dt>
+                <dd>El animal está disponible para iniciar un proceso de adopción responsable.</dd>
+            </dl>
+        </section>
+
+        <section aria-labelledby="nuevo-reporte">
+            <h2 id="nuevo-reporte">¿Conoces otro caso?</h2>
+            <p><a href="reportar.html">Completa el formulario para reportarlo.</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Volver al inicio</a> | <a href="reportar.html">Reportar un caso</a></p>
+        <p>&copy; 2026 Sistema de Control de Rescate y Adopción.</p>
+    </footer>
+</body>
+</html>

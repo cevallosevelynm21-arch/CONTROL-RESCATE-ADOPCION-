@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario para reportar animales que necesitan rescate.">
+    <title>Reportar un caso | Control de Rescate y Adopción</title>
+</head>
+<body>
+    <header>
+        <h1>Reportar un caso de rescate</h1>
+        <p>Completa los datos para comunicar una situación que requiere atención.</p>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html" aria-current="page">Reportar un caso</a></li>
+                <li><a href="rescates.html">Consultar rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="instrucciones">
+            <h2 id="instrucciones">Formulario de registro</h2>
+            <p>Los campos marcados como obligatorios deben completarse antes de enviar el formulario.</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Información de la persona que reporta</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" minlength="3" maxlength="80" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telefono">Número de teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9+() -]{7,20}" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información del animal</legend>
+
+                    <p>
+                        <label for="especie">Especie:</label>
+                        <select id="especie" name="especie" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="fauna-silvestre">Fauna silvestre</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="cantidad">Cantidad de animales:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="50" value="1" required>
+                    </p>
+
+                    <p>
+                        <label for="ubicacion">Lugar donde se encuentra:</label>
+                        <input type="text" id="ubicacion" name="ubicacion" minlength="5" maxlength="150" required>
+                    </p>
+
+                    <p>Prioridad del caso:</p>
+                    <p>
+                        <input type="radio" id="alta" name="urgencia" value="alta" required>
+                        <label for="alta">Alta</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="media" name="urgencia" value="media">
+                        <label for="media">Media</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="baja" name="urgencia" value="baja">
+                        <label for="baja">Baja</label>
+                    </p>
+
+                    <p>
+                        <label for="descripcion">Descripción de la situación:</label>
+                        <textarea id="descripcion" name="descripcion" rows="5" cols="40" minlength="10" maxlength="1000" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="fecha">Fecha del reporte:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="checkbox" id="confirmacion" name="confirmacion" required>
+                    <label for="confirmacion">Confirmo que la información proporcionada es correcta.</label>
+                </p>
+
+                <button type="submit">Enviar reporte</button>
+                <button type="reset">Limpiar formulario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Volver al inicio</a> | <a href="rescates.html">Consultar rescates</a></p>
+        <p>&copy; 2026 Sistema de Control de Rescate y Adopción.</p>
+    </footer>
+</body>
+</html>
